@@ -1,0 +1,382 @@
+html {
+    background-color: #FFDCA7;
+    font-size: 16px;
+
+}
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.navbar ul {
+    list-style: none;
+    position: relative;    /* So the first submenu can be positioned within the main menu */
+    z-index: 100;  
+}
+.navbar ul li {
+    float: left;
+}
+.navbar ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+    top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+.nabar ul ul li {
+    float: none;           /* Display the submenus vertically */
+}
+.navbar ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+}
+.navbar > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* The styles for the formatting of the 2-tier navigation menu */
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    background-color: #E2A777;
+}
+.navbar ul li a {
+    text-align: center;
+    font-size: 150%;
+    display: block;
+    padding: 0.4em;
+    text-decoration: none;
+    background-color: #E2A777;
+    color: #FFFFFF;
+    font-family: Noto-Sans, Arial, Helvetica, sans-serif;
+}
+.dropdown {
+    width: 5em;
+}
+.navbar ul li.lastitem a {
+    width: 130px;               /* So the menu fills the 706px width of the page */
+}
+.navbar ul li a.current {
+    color: #FFFFFF;
+}
+.navbar ul li a:hover, #nav_menu ul li a:focus {
+    background-color: grey;
+}
+.hero-container {
+    width: 80rem;
+    height: 50.95806rem;
+    flex-shrink: 0;
+    margin-bottom: 4.375rem;
+}
+.hero {
+    background: url("../images/header_pic.webp"), lightgray 0px -77.379px / 99.906% 118.903% no-repeat;
+    mix-blend-mode: plus-darker;
+    height: 50.95806rem;
+    border-radius: 0rem 0rem 3.8125rem 3.8125rem;
+    border: 9px solid #E2A777;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
+}
+.hero-text {
+    padding-top: 25%;
+    padding-left: 1%;
+}
+.hero-text h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 45.96219rem;
+    height: 6.99425rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 6.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hero-text h2 { 
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 42.1875rem;
+    height: 5.27344rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 4.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.brands {
+    display: flex;
+}
+
+a:hover {
+    color: #8067e6;
+  }
+.information-icon {
+    display: flex;
+    width: min-content;
+    flex-shrink: 0;
+    align-self: center;
+    color: #B9AAF0;
+    padding: 1rem;
+    margin: 0.2rem;
+    background-color: #A7725E;
+    border: 9px solid #E2A777;
+    border-radius: 1.9rem;
+    filter: drop-shadow(0px 9px 5px rgba(0, 0, 0, 0.25));
+    text-decoration: none;
+}
+.hero-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 36.9375rem;
+    height: 2.9375rem;
+    flex-shrink: 0;
+    color: #E5E5E5;
+    font-family: Noto Sans;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.purple_button, .brown_button {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 1.20rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.71875rem; /* 137.5% */
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+    padding: 1rem 4.5rem;
+    font-family: Mulish;
+}
+.purple_button {
+    display: flex;
+    width: 9.09731rem;
+    height: 2.10694rem;
+    padding: 1.3125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 3.8125rem;
+    background: #B9AAF0;
+    flex-shrink: 0;
+}
+.brown_button {
+    width: 10.09731rem;
+    height: 2.10694rem;
+    flex-shrink: 0;
+    display: flex;
+    padding: 1.3125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 3.8125rem;
+    background: #4E3600;
+}
+.introduction-container  {
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+    text-align: center; 
+    margin-bottom: 9.002rem;
+    
+}
+.photo-card {
+    width: 66.5625rem;
+    height: 26.63588rem;
+    flex-shrink: 0;  
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3.8125rem;
+    border: 9px solid #E2A777;
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
+    background: #E2A777;
+    background: url(../images/about_pic.webp), lightgray 50% / cover no-repeat;
+}
+.photo-card h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.photo-card p {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 3%;
+
+}
+.projects-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-top: 4.375rem;
+    margin-bottom: 4.375rem;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.project-card {
+    width: 32.75rem;
+    height: 37.875rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3.8125rem;
+    background: #E2A777;
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
+}
+.project-card img {
+    border-radius: 3.8125rem;
+    border: 0.8rem solid #E2A777;
+    width: 95%;
+}
+.project-card h3 {
+    margin-top: 0;
+    color: #4E3600;
+    font-family: Mulish;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1%;
+}
+.project-card p {
+    color: #724F00;
+    font-family: Noto Sans;
+    font-size: 1.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+.button-container {
+    justify-content: center;
+    display: flex;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    
+}
+.contact-header {
+    width: 32.75rem;
+    height: 9.625rem;
+    flex-shrink: 0;
+    border-radius: 3.8125rem 3.8125rem 0rem 0rem;
+    background: #E2A777;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    filter: drop-shadow(5px 0px 50px rgba(0, 0, 0, 0.25));
+    z-index: -1;
+}
+.contact-header h2 {
+    color: #4E3600;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header{
+    color: #4E3600;
+
+    text-align: center;
+    font-family: Mulish;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contact-body {
+    display: flex;
+    flex-direction: column;
+    height: 26.5625rem;
+    background: #E2A777;
+    align-items: center;
+    z-index: 200;
+}
+.contact-body h3 {
+    color: #4E3600;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contact-body form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+input {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9375rem; /* 193.75% */
+}
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+form input[type="email"] {
+    flex-grow: 1; 
+    padding: 0.5rem;
+    border-radius: 4.375rem 0rem 0rem 4.375rem;
+    background: #4E3600;
+    border: none;
+    color: #FFF;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.9375rem;
+}
+.submit {
+    font-family: Mulish;
+    border-radius: 0rem 4.375rem 4.375rem 0rem;
+    background: #8F8FDB;
+    padding: 0.5rem 1.3rem;
+    border-width: 0px;
+}
+
+@media screen and (max-width: 760px) {
+    .hero-container {
+        width: 180%;
+    }
+    .introduction-container {
+        width: 760px;
+    }
+    .photo-card {
+        width: 67%;
+    }
+    .photo-card h2 {
+        font-size: 4rem;
+    }
+}

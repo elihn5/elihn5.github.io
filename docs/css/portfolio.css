@@ -1,0 +1,148 @@
+html {
+    background-color: #FFDCA7;
+    font-size: 16px;
+
+}
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.navbar ul {
+    list-style: none;
+    position: relative; /* So the first submenu can be positioned within the main menu */
+    z-index: 100;    
+}
+.navbar ul li {
+    float: left;
+}
+.navbar ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+    top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+.nabar ul ul li {
+    float: none;           /* Display the submenus vertically */
+}
+.navbar ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+}
+.navbar > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* The styles for the formatting of the 2-tier navigation menu */
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    background-color: #E2A777;
+}
+.navbar ul li a {
+    text-align: center;
+    font-size: 150%;
+    display: block;
+    padding: 0.4em;
+    text-decoration: none;
+    background-color: #E2A777;
+    color: #FFFFFF;
+    font-family: Noto-Sans, Arial, Helvetica, sans-serif;
+}
+.dropdown {
+    width: 5em;
+}
+.navbar ul li.lastitem a {
+    width: 130px;               /* So the menu fills the 706px width of the page */
+}
+.navbar ul li a.current {
+    color: #FFFFFF;
+}
+.navbar ul li a:hover, #nav_menu ul li a:focus {
+    background-color: grey;
+}
+.hero-container {
+    width: 80rem;
+    height: 50.95806rem;
+    flex-shrink: 0;
+    margin-bottom: 4.375rem;
+}
+.hero {
+    background: url("../images/portfolio_website_banner.webp"), lightgray 0px -77.379px / 99.906% 118.903% no-repeat;
+    mix-blend-mode: plus-darker;
+    height: 50.95806rem;
+    border-radius: 0rem 0rem 3.8125rem 3.8125rem;
+    border: 9px solid #E2A777;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
+    z-index: -10;
+}
+.hero-text {
+    padding-top: 25%;
+}
+.hero-text h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 45.96219rem;
+    height: 6.99425rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 6.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-top: 4.375rem;
+    margin-bottom: 4.375rem;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.skill-card {
+    width: 32.75rem;
+    height: 37.875rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3.8125rem;
+    background: #E2A777;
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
+}
+.icon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10%;
+}
+.skill-card i {
+    flex-shrink: 0;
+}
+.skill-card h2 {
+    margin-top: 0;
+    color: #4E3600;
+    font-family: Mulish;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1%;
+}
+.skill-card li {
+    color: #724F00;
+    font-family: Noto Sans;
+    font-size: 1.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
